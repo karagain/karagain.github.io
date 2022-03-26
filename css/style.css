@@ -823,7 +823,7 @@ h2.article-head {
   transition: all 0.4s;
   transition-delay: 0.05s;
 }
-.author .discription {
+.author .description {
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.4s;
@@ -847,6 +847,9 @@ h2.article-head {
 }
 .author .share-icons .icon-weibo {
   color: #e6162d;
+}
+.author .share-icons .icon-linkedin {
+  color: #0e76a8;
 }
 .author .share-icons .icon-github {
   color: #333;

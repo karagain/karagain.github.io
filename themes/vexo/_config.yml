@@ -1,12 +1,11 @@
 author: yanm1ng # 作者
-description: yanm1ng's blog
-keyword: hexo-theme, vuejs
+description:
+keyword:
 
 excerpt_link: Read more
 
 menu:
  Home: /
- Series: /series/
  Tags: /tags/
  Archives: /archives/
  Projects: /project/
