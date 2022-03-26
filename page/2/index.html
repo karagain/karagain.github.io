@@ -115,9 +115,9 @@
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2018/01/14/Day08-解密setState机制/">解密setState机制</a>
+        <a href="/2017/06/30/Day03-React使用表单的正确姿势/">React使用表单的正确姿势</a>
       </h2>
-      <p class="article-date">January 14, 2018</p>
+      <p class="article-date">June 30, 2017</p>
       
         
   <a href="/tags#react" >
@@ -128,40 +128,20 @@
       <div class="article-summary">
         
           
-state 是 React 中的重要概念。React 是通过管理状态来实现对组件的管理，通过 this.state 来访问 state，通过 this.setState 来更新 state。
+在 WEB 应用开发中，表单的作用尤为重要，正是由于表单的存在才使得用户能够与 WEB 应用进行交互。其中表单在实际应用中还涉及到表单数据校验等复杂工作。
 
-setState 通过一个队列机制来实现 state 的更新。调用 setState 函数之后， ...
+1.应用表单组件文本框文本框包含单行文本框 input 和多行文本框 textarea。
+import React from 're ...
         
       </div>
-      <a class="more" href="/2018/01/14/Day08-解密setState机制/">Read more</a>
+      <a class="more" href="/2017/06/30/Day03-React使用表单的正确姿势/">Read more</a>
     </article>
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2017/09/17/Day07-组件生命周期详解/">组件生命周期详解</a>
+        <a href="/2017/06/28/Day02-React事件系统/">React事件系统</a>
       </h2>
-      <p class="article-date">September 17, 2017</p>
-      
-        
-  <a href="/tags#react" >
-    <span class="tag-code">react</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          &gt;&gt;&gt; from gnassl import * &gt;&gt;&gt; GPS_START_DATE datetime.date(1980, 11, 21)&gt;&gt;&gt; GPS_START_DATEdatetime.date(1980, 11, 21)
-Re ...
-        
-      </div>
-      <a class="more" href="/2017/09/17/Day07-组件生命周期详解/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/09/10/Day06-理解Virtual-DOM模型/">理解Virtual-DOM模型</a>
-      </h2>
-      <p class="article-date">September 10, 2017</p>
+      <p class="article-date">June 28, 2017</p>
       
         
   <a href="/tags#react" >
@@ -172,17 +152,37 @@ Re ...
       <div class="article-summary">
         
           
-Virtual DOM 之于 React，就好比一个虚拟空间，React 几乎所有的工作都是基于 Virtual DOM 完成的。其中，Virtual DOM 模型负责 Virtual DOM 底层框架的构建工作，它拥有一整套的 Virtual DOM 标签，并负责虚拟节点及其属性的构建、 ...
+Virtual DOM 在内存中是以对象的形式存在的，所以在这些对象上添加事件将会非常简单。React 基于 Virtual DOM 实现了一个 SyntheticEvent 合成事件层，我们所定义的事件处理器都会接收到一个 SyntheticEvent 对象的实例，符合 W3C 的标准， ...
         
       </div>
-      <a class="more" href="/2017/09/10/Day06-理解Virtual-DOM模型/">Read more</a>
+      <a class="more" href="/2017/06/28/Day02-React事件系统/">Read more</a>
     </article>
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2017/09/02/Day05-组件间的通信/">React组件间的通信</a>
+        <a href="/2017/06/26/Day01-初识React/">初识React</a>
       </h2>
-      <p class="article-date">September 2, 2017</p>
+      <p class="article-date">June 26, 2017</p>
+      
+        
+  <a href="/tags#react" >
+    <span class="tag-code">react</span>
+  </a>
+
+      
+      <div class="article-summary">
+        
+          1. React特点Virtual DOM我们知道，在传统的前端开发中，一个 HTML 页面对应一个 DOM 树。每次需要更新页面时，都是对响应的 DOM 进行操作。DOM 的操作成本很高，性能消耗最大，这也是为什么这几年前端涌现出各种 MVVM 框架的主要原因。而 React 把真实的 D ...
+        
+      </div>
+      <a class="more" href="/2017/06/26/Day01-初识React/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2017/06/17/React常见问题的整理/">React常见问题的整理</a>
+      </h2>
+      <p class="article-date">June 17, 2017</p>
       
         
   <a href="/tags#react" >
@@ -193,45 +193,43 @@ Virtual DOM 之于 React，就好比一个虚拟空间，React 几乎所有的�
       <div class="article-summary">
         
           
-React 是以组件组合的形式组织的，组件因为彼此是相互独立的。所以在嵌套关系上就会有三种不同的可能性：父组件向子组件通信、子组件向父组件通信和没有嵌套关系间的组件通信。
+React 起源于 Facebook 的内部项目，用来架设 Instagram 的网站。React 的设计可以简单理解为 组件的组合模式和数据的单向流动。以下是 React 常见问题的整理
 
-1.父组件向子组件通信React 的数据流动是单向的，所以父组件向子组件通信也是最常见的方式。父组件通过 props ...
+setState之后发生了什么？调用 setState() 函数之后，React 会将传入的参数对 ...
         
       </div>
-      <a class="more" href="/2017/09/02/Day05-组件间的通信/">Read more</a>
+      <a class="more" href="/2017/06/17/React常见问题的整理/">Read more</a>
     </article>
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2017/07/01/Day04-React中的样式处理/">React中的样式处理</a>
+        <a href="/2017/06/14/深入理解flex-grow、flex-basis、flex-shrink/">深入理解flex-grow、flex-basis、flex-shrink</a>
       </h2>
-      <p class="article-date">July 1, 2017</p>
+      <p class="article-date">June 14, 2017</p>
       
         
-  <a href="/tags#react" >
-    <span class="tag-code">react</span>
+  <a href="/tags#深入理解系列" >
+    <span class="tag-code">深入理解系列</span>
   </a>
 
       
       <div class="article-summary">
         
           
-在 React 中，样式处理是至关重要的一环，也是当前非常热门的话题  
-
-1.基本样式处理React 组件最终会被渲染成 HTML，所以我们可以使用原先 HTML 设置 CSS 一样的方法来设置样式。我们可以设置 className props 来添加类名，也可以通过 style pro ...
+布局的传统解决方案基于 盒模型 ，依赖 display + position + float ，flex 为布局带来了新的时代，我们再也不用局限于 float 和 position ，特别是在移动端，我们可以利用 flex 轻松实现以往 float 和 psition 很难实现的布局。 本 ...
         
       </div>
-      <a class="more" href="/2017/07/01/Day04-React中的样式处理/">Read more</a>
+      <a class="more" href="/2017/06/14/深入理解flex-grow、flex-basis、flex-shrink/">Read more</a>
     </article>
   
 
   
     <div class="guide-pager">
   
-    <a class="unvisible" href="/"><span class="page-arrow">←</span> Prev</a>
+    <a href="/"><span class="page-arrow">← </span>Prev</a>
   
   
-    <a href="/page/2/">Next<span class="page-arrow"> →</span></a>
+    <a href="/page/3/">Next<span class="page-arrow"> →</span></a>
   
 </div>
   
