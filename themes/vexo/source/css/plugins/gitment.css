@@ -6,7 +6,7 @@
 }
 
 .gitment-container * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .gitment-container *:disabled {
@@ -644,12 +644,12 @@ a.gitment-editor-footer-tip:hover {
 }
 
 .gitment-markdown [type="checkbox"] {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0;
 }
 
 .gitment-markdown * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 .gitment-markdown input {
