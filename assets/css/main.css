@@ -1829,11 +1829,14 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		border: 0;
+		border-radius: 4px;
+		position: relative;
 	}
 
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 4px;
 		}
 
 		.image.avatar {
@@ -1849,6 +1852,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
+			margin: 0 0 2em 0;
 			width: 100%;
 		}
 
